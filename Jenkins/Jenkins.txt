@@ -1,0 +1,45 @@
+Build Deplyoment process
+Build -> Test -> Deploy
+By default all process is done manually. Since it is continuous process it is very tiresome process for team
+
+Dev ops => Development Operations
+
+Challanges in manual work (Deployemnt)
+1> Dev write new code every day. Follow process every day 
+2> Multiple environment / Dev ENV / Testing ENV
+3> Process Comsuming 
+4> Error Prone
+
+In order to overcome these problems we use automation tools like 
+1. Jenkins
+2. Azure Pipelines
+
+These sofware allows you to prepare scripts to automate the deployemnt process at each stage .
+We can write code at each stage and can create new stage in between Build and Deploy
+
+After the code get commited to GitHub , Devops team write/create the pipeline that what to do with the code at different stages
+As soon the code get commited the , code automatically gets Build and Deployed based on the scripts written in the Jenkins
+
+
+Types of Environments
+
+1> Dev Environment - The projects are developed in this environemnt only. Unit testing and Integration Testing are performed \
+2> Quality Assurance Env - Testing Env . Testing the entire APP
+3> User Acceptence Testing Env - 
+4> Pilot ENv / Pre Production Env - Performance of the application is tested
+5> Production Evn 
+
+
+CI/CD Pipelines 
+CI-> Continuous Integration - Build test Deploy
+Continuous Integration is the automation to build and test application whenever new commits are pushed into the branch
+
+CD-> Continuous Devlivery/Deplyoment - Release Build Deploy
+Continuous Devlivery - is Continuous Integration + Deploy application to production by 
+"clicking on a button " Release to customers is often but on DEMAND.
+
+Continuous Deplyoment - is Continuous Delivery but without human interaction
+
+
+
+

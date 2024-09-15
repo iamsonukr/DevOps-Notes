@@ -1,0 +1,67 @@
+waterfall model
+Developement happens in step by step
+
+1> Requirement analysis 
+You sit down with the actual client and understand specifically what they are looking for in the software you are going to build 
+
+2> Design 
+Programer came up with the plan and the Design
+
+3> Developement
+Programmer code the application as per the project plan and design
+
+4>Testing 
+Testing ensures the application is error free and meets the Requirement
+
+5> Delivery
+
+
+------------Agile ---------------
+
+Programmers create prototype to understand client requirement 
+The entire process of building a software is broken down into small actionable blocks called sprint 
+Plan -> Code -> Test -> Review 
+
+Sprint run for weeks 1,2,3,4
+
+------------------DevOps-------------------
+
+DevOps is a software development practice that combines development and operations to improve the speed and reliability of software delivery.
+It's a combination of the words "development" and "operations
+
+when the product fails in the production server , the operation teams are clueless and sent the product back to the development team 
+this is the where DevOps comes in 
+
+-> Devops is an evolution from agile model of software development 
+-> Agile addresses the gap between clients and developers 
+
+client + requirement   <---->   Development and Testing  <------->   Operation + Infrastructure
+-> Developers send the application to the devops and receive feedback 
+
+According to devOps practice, the workflow in software developement and delivery is divided into 8 phases.
+
+Plan -> Monitor -> Operate -> Deploy -> Integrate -> Test -> Build -> Code
+
+
+------------Roles and responsibilies of DevOps engineer -----------------------
+
+1> Collaboration and Communication
+2> Infrastructure Automation and Configureation Management
+3> Continuous Integration and Continuous Deployment 
+4> Monitoring and Performance Optimization
+5> Security and Compliance 
+
+
+----Skills required for devOps Engineers-------------
+
+1> Coding and Scripting
+2> System Administration 
+3> Cloud Computing 
+4> Conainerization and Orchestration
+5> Continuous Integration and Deployment
+6> Infrastructure as code
+7> Monitor and Logging 
+
+40:48
+
+

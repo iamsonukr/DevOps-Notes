@@ -1,0 +1,13 @@
+----------------------------Introduction--------------------------------
+A database management system provides the mechanism to store and retrieve the data
+
+Types
+1> RDBMS - Relational Database management system
+2> OLAP - Online Analytical Processing
+3> NoSQL - Not Only NoSQL
+
+----------------What is NoSQL-----------
+
+-> NOSOL is an approach to database design that provides flexible schemas for the storage and retrieval of data beyond the
+traditional table structures found in relational databases.
+-> It relates to large data sets accessed and manipulated on a Web scale.

@@ -1,0 +1,113 @@
+Git is a free and opens source distributed version control system 
+
+------------------------------------------------GLOBAL Config----------------------------
+
+
+git config --global user.name "Sonu Kumar"
+git config --global user.email "thesonukr@gmail.com"
+git config --global color.ui auto
+
+// these commands are not for login . These are to let the watchers know that the particular conntribution is done by this guy
+
+
+------------------------------------------------- Git basics -------------------------------------
+
+
+1 > Initialize the git ---
+git init 
+
+2> Adding files ---
+All files
+git add .
+
+particular file 
+git add jinga.js
+
+3> Stage the code to push
+git commit -m "message" 
+
+4> Showing changes made
+git diff
+
+5> Show all commits
+git log
+
+6> Show all changes in particular commit 
+-> git log
+-> select the id of particular commit
+-> git show 43dd34
+
+7> Check which memeber has made which changes in a file
+git blame filename
+
+Files get modified -> Get to the staging area -> files get pushed
+
+---------------------------------------------------------- Rerverting --------------------------------------------
+
+Reverting is the way of moving the head from the current commit to the previous commits. After making any unsuitable changes.
+
+----METHOD ONE ------
+1> Get the all comits 
+2> Reset the code . This will immediatly reset the code to previous commit and you will loose all new commit 
+
+git log --oneline
+git reset --hard 4dfe3
+
+
+--- Method TWO-----
+1> Git log
+2> Git revert 23ds3s
+
+It will reverse all the changes made in a particular commit . 
+If a function is added it will be removed , if removed it will be added back.
+
+
+-------------------------------------------------------------- GitHUb ------------------------------------------------
+
+github is a central reposetory to add all the git files .
+GIthub is a server which has git installed in it.
+
+1> Add remote repo to a folder
+// origin is the name of  url of remote repo
+
+git remote add origin url
+
+2> Push the code to remote
+
+git push -u origin main
+
+git <operateion> -u <name of url> <branch>  
+
+3> Check the current name of remote repo
+git remote -version
+
+In order to push code to someone else repo you need access to ssh keys or an invitation as collaborator.
+
+
+----------------------------------------------------- BRANCHING----------------------------------------------------
+
+We create branches to make clean commits as if multiple people keep commiting in a single branch 
+it will get polluted and will be difficult to restore the changes.
+
+1> Create new branch 
+git branch branchName
+
+2> Show all and current branch 
+git branch
+
+3> Change the branch
+git checkout branchName
+
+3b> Create and Switch branch in one line
+
+4>In order to push the new branch in the github reposetory you need 
+git push --set-upstream  origin <branchName>
+
+5> After push the code on the repository you need to merge it with the main branch 
+git merge origin/<branchName>
+
+6> If the repo has been merged on the server not on the local we use git pull to get all the channges made in latest repo
+
+
+
+
