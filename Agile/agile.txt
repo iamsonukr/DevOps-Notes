@@ -1,0 +1,161 @@
+Q> Explain Agile in brief?
+
+Agile is a set of methods and practices
+that focuses on iterative development
+Requirements and solutions are
+obtained thanks to self-organizing
+cross-functional teams collaborating
+
+-----------------------------------------
+
+Explain the difference between a traditional Waterfall model and Agile testing?
+
+->Agile Model is a continuous iteration life cycle model for developing and testing a software
+->Agile is flexible way 
+->Agile Model is a highly collaborative
+approach towards software
+development, yielding a better output
+->The entire process of development is
+divided into sprints
+->Changes may be made even after the
+initial planning is completed
+->Software development is a
+collection of many different projects
+->Testing is performed in the same
+iteration as programming or building
+
+Waterfall Model is a linear sequential life cycle model for developing and testing a software
+->It  is a rigid way 
+Waterfall Model is less flexible and
+follows a sequence of steps, not
+allowing the team to collaborate
+->The software development process
+is broken down into several phases
+->Development requirements cannot
+be changed once the project
+development begins
+->Software development is completed
+as a single project or deliverable
+->The testing phase comes after the
+Build phase
+
+-----------------------------------------
+
+What are some important parts of the Agile process?
+
+Self organised
+simplicity
+Constant Pace
+changes in any phase
+
+-----------------------------------------
+
+Explain Iterative and Incremental Development in Agile.
+
+-> Incremental Development
+With Incremental Development, the
+process is divided into small workable
+increments
+Each successive increment builds on
+top of the work done in the previous
+increments
+Over time, functionalities are added based on what was already created
+
+->Iterative Development
+Iterative Development
+Iterative development involves the
+development of a system by following
+repeated cycles or iterations
+Based on the results from the most
+recent iteration of the process, changes
+are made. This helps the project evolve
+over time 
+
+Agile - Iterative + Incremental
+Agile involves consideration and
+creation of a working product in an
+iteration, which is part of the overall
+final product
+Each iteration is an enhanced working
+increment of the final product
+This process continues until all the
+product functionalities are satisfied
+
+Agile - Iterative + Incremental
+Organizations and users can use and
+experience the product and provide
+feedback that can be incorporated into
+the next iteration
+Causing product roadmaps to be built,
+produced, tested and confirmed before
+the next iteration
+
+What are the Different Types of Agile Methodologies?
+
+Extreme Programming
+It is a framework that enables teams
+to create high-quality software and
+improves their quality of life
+It enables software development
+with the appropriate engineering
+practices
+
+Kanban
+This method is used to design,
+manage and improve the flow of
+systems
+Organizations can visualize their
+flow of work and limiting their work
+in progress
+
+Lean
+• Lean is a set of tools and principles
+that aims to identify and remove
+waste to increase the speed of
+process development
+It focuses on maximizing value to
+the client, ensuring waste is
+minimized
+
+Scrum
+Scrum is a framework that is used
+by teams to establish a hypothesis,
+try it out, reflect on the experience
+and adjust
+It is used to enable teams to
+incorporate practices from other
+frameworks depending on the
+team's requirements
+
+Crystal
+Crystal is an approach to software
+development that focuses on
+people and their interactions, rather
+than tools and processes
+It is aimed to streamline processes
+and improve optimization
+It works on the principle that
+projects are unique and dynamic
+
+
+--------------------------------------
+
+What are the Principles of Agile Testing?
+
+Testing continuously to ensure the
+product improves continuously
+Obtain feedback continuously to
+ensure the product meets business
+requirements
+All team roles (testing, development,
+etc.) need to be involved in the testing
+process
+
+
+The active involvement of the business
+team and representatives can provide
+quick feedback for each iteration
+Clean and simplified code ensures it to
+be defect—free during the iteration
+The documentation created must be
+limited into a particular iteration
