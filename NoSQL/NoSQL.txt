@@ -11,3 +11,134 @@ Types
 -> NOSOL is an approach to database design that provides flexible schemas for the storage and retrieval of data beyond the
 traditional table structures found in relational databases.
 -> It relates to large data sets accessed and manipulated on a Web scale.
+
+-> The system response time become slow when when we use RDBMS we already 
+-> NoRelational database scale out better
+
+-> It can handle 
+Semi structured data ,
+Un structured data
+Rapidly changing data
+
+------------------------------Features of NoSQL---------------------------
+It is non-relational
+It is open source
+Distributed
+Supports New Generation web application
+Schema less
+Simple API
+
+
+--------------Difference between SQL and NoSQL-------------------------
+SQL -> RDBMS                            NoSQL-> Non Relational DBMS or Distributed management system
+SQL -> Fixed Schema                     NoSQL-> Dynamic Schema
+SQL -> Not Suited for hirarchical       NoSQL-> Suited for hirarchinal
+SQL -> Vercially scalable               NoSQL-> Horizontally scalable
+SQL -> follow ACID                      NoSQL-> follow CAPS 
+SQL ->Atomicity Consistency Integrity Durability       NoSQL-> Consistency , availablity, partition tolerance
+
+
+---------------------Wht is CAP theoram------------------------
+
+CAP theoram -> It is impossible for a distributed data store to offer more than two out of three gurentte
+
+------------------------------------Data Model ---------------------------------
+
+Data model is defined as an abstract model that organizes data description , data semantics and consistency constraint of data.
+Data model emphasize what data is needed and how it will be organised insted of what operation will be performed
+
+
+-------------------------------Types of NoSql DATABASES-----------------------------------
+
+Key value pair based --> Redis , riak
+Graph Based --> Neo4j , OrientDB
+Column Oriented --> Apache Hbase, Cassandra
+Document Oriented --> MongoDB ,CouchDB
+
+
+
+-----------------------------------------------------------------------------------------------------------------------------
+----------------------------------------INTERVIEW---------------------------------------------------------------------
+
+Here are some NoSQL interview questions along with their answers:
+
+1. What is NoSQL, and how is it different from RDBMS?
+Answer: NoSQL is a category of database management systems that does not follow the traditional relational database structure. Unlike RDBMS, which uses tables and predefined schemas, NoSQL databases use various data models, such as key-value, document, column-family, and graph. NoSQL databases are designed for scalability and flexible data storage, whereas RDBMS is more suited for structured data and complex queries.
+
+2. What are the types of NoSQL databases?
+Answer: The four primary types of NoSQL databases are:
+
+Key-Value Stores (e.g., Redis, DynamoDB): Data is stored as key-value pairs.
+Document Stores (e.g., MongoDB, Couchbase): Data is stored in documents (e.g., JSON, BSON).
+Column-Family Stores (e.g., Cassandra, HBase): Data is stored in columns rather than rows.
+Graph Databases (e.g., Neo4j): Data is stored as nodes and relationships, useful for network-like data.
+3. What are the advantages of NoSQL databases?
+Answer:
+
+Scalability: NoSQL databases are designed to scale horizontally by distributing data across multiple servers.
+Flexible Schema: NoSQL databases allow for dynamic, unstructured, and semi-structured data, making them more flexible than traditional relational databases.
+High Availability: Many NoSQL databases provide fault tolerance and high availability.
+Better for Big Data: NoSQL is well-suited for handling large datasets and high-velocity data from distributed systems.
+4. When would you choose NoSQL over a relational database?
+Answer: NoSQL is preferred when:
+
+You need to store large volumes of unstructured or semi-structured data.
+You require high scalability (horizontal scaling).
+Your application needs fast write operations with high throughput.
+You don’t need complex joins, transactions, or strict consistency (eventual consistency is acceptable).
+5. What is CAP Theorem, and how does it apply to NoSQL databases?
+Answer: CAP Theorem states that a distributed database can guarantee only two of the following three properties at the same time:
+
+Consistency: All nodes see the same data at the same time.
+Availability: Every request gets a response (success/failure).
+Partition Tolerance: The system continues to operate despite network partitions. In NoSQL databases, trade-offs are made based on CAP theorem, where some databases prioritize availability over consistency and vice versa.
+6. What is eventual consistency in NoSQL?
+Answer: Eventual consistency means that updates to a distributed NoSQL database will propagate to all nodes, but it may not happen immediately. Eventually, all nodes will be consistent, but temporary discrepancies may exist.
+
+7. Explain the differences between MongoDB and Cassandra.
+Answer:
+
+MongoDB:
+A document store that uses JSON-like documents (BSON).
+Supports ad-hoc queries and flexible schemas.
+Strongly consistent (in a single node setup) but can be configured for eventual consistency.
+Cassandra:
+A column-family store optimized for high availability and partition tolerance.
+Designed for heavy write loads with an eventual consistency model.
+Excellent for distributed, large-scale systems.
+8. What is a key-value store, and can you give examples?
+Answer: A key-value store is a simple type of NoSQL database where data is stored as a pair of keys and values. Each key is unique, and it allows you to retrieve the corresponding value quickly. Examples include:
+
+Redis: An in-memory key-value store, often used for caching.
+Amazon DynamoDB: A managed key-value store designed for high availability and scalability.
+9. What is a document store, and how does it differ from a key-value store?
+Answer: A document store is a type of NoSQL database that stores data in documents (e.g., JSON, BSON) where each document can have a unique structure. Unlike key-value stores, document stores allow querying based on the fields within the document. Examples of document stores include MongoDB and CouchDB.
+
+10. How does horizontal scaling work in NoSQL databases?
+Answer: Horizontal scaling in NoSQL means adding more servers (nodes) to handle increased data and traffic. Instead of upgrading the hardware of a single server (vertical scaling), the database distributes data across multiple servers. This allows NoSQL databases to manage large volumes of data and high request rates efficiently.
+
+11. What is sharding in NoSQL databases?
+Answer: Sharding is the process of splitting a large dataset into smaller, more manageable pieces, called shards, which are distributed across multiple nodes or servers. Each shard contains a subset of the data, allowing for horizontal scaling. MongoDB, for example, uses sharding to distribute data across clusters.
+
+12. What are the main use cases for NoSQL databases?
+Answer:
+
+Big Data applications: NoSQL databases are excellent for handling large-scale data.
+Real-time web apps: Systems like social networks or messaging apps require high write throughput, which NoSQL supports.
+Content management systems: Document stores like MongoDB are suitable for managing unstructured content.
+IoT applications: NoSQL databases like Cassandra are ideal for handling time-series data from IoT devices.
+13. What is a column-family store, and how does it work?
+Answer: A column-family store, like Apache Cassandra, organizes data into rows and columns, but instead of grouping data by rows (as in relational databases), it groups data by columns. Each row can have a variable number of columns, making it flexible for storing sparse data.
+
+14. What is replication in NoSQL, and why is it important?
+Answer: Replication is the process of copying data across multiple nodes to ensure data availability and fault tolerance. If one node fails, other nodes still have the data, ensuring system reliability. NoSQL databases often provide different replication strategies, like master-slave or peer-to-peer replication.
+
+15. What are some common NoSQL databases, and which data models do they use?
+Answer:
+
+MongoDB: Document-based.
+Cassandra: Column-family-based.
+Redis: Key-value-based.
+Neo4j: Graph-based.
+Couchbase: Document-based.
+These questions should provide a well-rounded understanding of NoSQL and help you prepare for interviews on the subject.
