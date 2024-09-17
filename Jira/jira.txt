@@ -1,0 +1,130 @@
+JIRA is a popular tool used for issue and project tracking, especially in software development environments. Here’s a breakdown of the basics:
+
+1. What is JIRA?
+JIRA is a project management tool developed by Atlassian. It's mainly used for bug tracking, issue tracking, and project management.
+Teams use JIRA to plan, track, and manage Agile projects, often in Scrum or Kanban frameworks.
+
+2. Key Components
+Projects: A collection of issues. Each project in JIRA has its own set of issues, team members, and workflows.
+Issues: These are tasks, bugs, features, or any work item that needs to be tracked. They can have types such as stories, tasks, bugs, and epics.
+Workflows: Define the states an issue moves through during its lifecycle, e.g., from "To Do" to "In Progress" to "Done."
+
+3. Issue Types
+Epic: A large body of work that can be broken down into smaller tasks (stories).
+Story: A feature or function required by the user.
+Task: A smaller, standalone unit of work.
+Bug: A problem or error in the system that needs to be fixed.
+
+4. Boards
+Scrum Board: Used for managing Sprints. It displays tasks in a Sprint and tracks progress through different stages.
+Kanban Board: Visualizes the workflow and helps to limit work in progress (WIP) to enhance flow and efficiency.
+
+5. Key Features
+Backlog: Where all tasks, bugs, and features are listed before they are moved into a sprint (for Scrum) or onto the board (for Kanban).
+Sprints: Time-boxed iterations in Scrum. You select issues from the backlog to work on during a sprint.
+Reports: JIRA provides various reports like Burndown Charts, Sprint Reports, and Velocity Charts to monitor project progress.
+
+6. Custom Fields
+JIRA allows adding custom fields to issues, such as "Priority," "Labels," "Due Date," etc., to better track information.
+
+7. JIRA Filters
+You can create custom queries to filter issues using JQL (JIRA Query Language). This helps in searching and organizing issues based on specific criteria.
+
+8. User Roles
+Administrator: Manages the setup of the JIRA project.
+Developer/Team Member: Works on the issues and updates the statuses.
+Project Manager/Product Owner: Creates and assigns tasks, monitors progress, and ensures deadlines are met.
+
+9. Workflows
+Each project has a workflow that dictates the movement of an issue through various statuses, such as "To Do," "In Progress," and "Done."
+
+10. Integrations
+JIRA integrates with tools like Confluence, Bitbucket, and GitHub to improve development and documentation workflows.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------INTERVIEW QUESTIONS-------------------------------------------------------------------
+
+Here are JIRA interview questions along with their answers:
+
+1. What is JIRA, and what is it used for?
+Answer: JIRA is a project management and issue-tracking tool developed by Atlassian. It’s primarily used by teams to track and manage projects, bugs, and tasks. It’s popular for supporting Agile methodologies like Scrum and Kanban.
+
+2. Explain the difference between a Scrum board and a Kanban board in JIRA.
+Answer:
+
+Scrum Board: Used for managing tasks within Sprints, which are time-boxed iterations. The board tracks the progress of tasks within the sprint.
+Kanban Board: Focuses on continuous flow. It visualizes the workflow and limits the work in progress (WIP) to improve efficiency. There are no fixed sprints in Kanban.
+3. What are Epics, Stories, and Tasks in JIRA?
+Answer:
+
+Epic: A large body of work that can be broken down into smaller tasks or stories.
+Story: A feature or functionality that the end-user requires. It’s smaller than an epic but can have several tasks.
+Task: A smaller, standalone unit of work that needs to be completed, often linked to a story or epic.
+4. What is a workflow in JIRA? Can you explain how it works?
+Answer: A workflow in JIRA represents the process an issue goes through during its lifecycle. A typical workflow includes states like "To Do," "In Progress," "In Review," and "Done." The workflow defines how an issue can move between these states.
+
+5. How does JIRA support Agile methodologies like Scrum and Kanban?
+Answer:
+
+Scrum: JIRA supports Scrum through Scrum boards, backlog management, sprint planning, and burndown charts.
+Kanban: JIRA supports Kanban via Kanban boards, work-in-progress (WIP) limits, and continuous task tracking without time-boxed sprints.
+6. What is a backlog in JIRA, and how do you manage it?
+Answer: The backlog is a list of tasks, bugs, and features that are yet to be worked on. It’s where you prioritize and organize work before assigning it to sprints (in Scrum) or moving it onto the board (in Kanban). Backlog items can be ordered by priority and tagged with estimates.
+
+7. What are JIRA issues, and what types of issues can you create?
+Answer: JIRA issues are the basic elements that track tasks, bugs, features, or any work item. Common types of issues include Epics, Stories, Tasks, Bugs, and Sub-tasks.
+
+8. What are the main components of JIRA?
+Answer:
+
+Projects: Grouping of related issues.
+Issues: Individual work items or tasks.
+Boards: Visual representation of work in progress, using either Scrum or Kanban.
+Workflows: The process flow that defines how an issue progresses through different stages.
+9. What is JIRA Query Language (JQL)?
+Answer: JIRA Query Language (JQL) is a flexible search language that allows users to create complex queries to filter issues in JIRA. For example, a query might be project = "WebApp" AND status = "In Progress" to find all issues for a specific project that are currently in progress.
+
+10. What are JIRA Filters, and how are they used?
+Answer: JIRA filters are saved searches based on JQL queries. They help users quickly access specific sets of issues, such as open tasks assigned to them. Filters can be shared with teams and used in dashboards or boards.
+
+11. What is a Sprint in JIRA, and how do you manage it?
+Answer: A sprint is a time-boxed iteration in Scrum where a defined amount of work is completed. Sprints are managed on the Scrum board, where tasks are moved from "To Do" to "In Progress" to "Done" during the sprint.
+
+12. What are the different types of reports available in JIRA?
+Answer: JIRA offers various reports to track project progress, including:
+
+Burndown Chart: Shows the work remaining in a sprint.
+Sprint Report: Displays completed and incomplete tasks from a sprint.
+Velocity Chart: Shows the amount of work completed in previous sprints.
+Cumulative Flow Diagram: Displays the distribution of tasks in different statuses over time.
+13. What is the purpose of Components in JIRA?
+Answer: Components in JIRA are used to group issues within a project. They allow you to break down the project into smaller, manageable parts (like features or modules), making it easier to assign work and track progress.
+
+14. Can you explain the use of Labels in JIRA?
+Answer: Labels are tags that can be added to issues to categorize or group them for easier tracking and filtering. They are flexible and can be used in combination with JQL for custom searches.
+
+15. How do permissions work in JIRA?
+Answer: JIRA has a flexible permissions model that allows project administrators to control who can view, edit, and transition issues. Permissions are defined in Permission Schemes and can be assigned to roles like administrators, developers, and viewers within a project.
+
+16. What are transitions in JIRA?
+Answer: Transitions are the actions that move an issue from one status to another in a workflow. For example, moving an issue from "To Do" to "In Progress" or from "In Progress" to "Done."
+
+17. How do you assign issues to team members in JIRA?
+Answer: You can assign issues to team members by using the "Assignee" field in the issue view. You can also bulk assign multiple issues to a team member if needed.
+
+18. What are Automation Rules in JIRA?
+Answer: Automation Rules in JIRA help to automate repetitive tasks, such as updating the status of issues or sending notifications. For example, you can set up a rule to automatically transition an issue to "Done" when all sub-tasks are completed.
+
+19. Can you explain what Roadmaps are in JIRA?
+Answer: Roadmaps in JIRA provide a visual representation of the project’s long-term goals and milestones. It helps teams plan work over a timeline and track progress across multiple epics and tasks.
+
+20. What are some common integrations with JIRA?
+Answer: JIRA integrates with many tools such as:
+
+Confluence: For documentation.
+Bitbucket/GitHub: For source code management and linking commits with JIRA issues.
+Slack/Microsoft Teams: For team communication and issue notifications.
+Trello: For simpler project management.
+These questions should give you a solid foundation for JIRA-related interviews.
+
+
