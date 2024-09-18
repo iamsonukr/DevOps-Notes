@@ -159,3 +159,64 @@ Clean and simplified code ensures it to
 be defect—free during the iteration
 The documentation created must be
 limited into a particular iteration
+
+
+------------------------------------------------------------------------
+
+) What are some Agile Metrics that Need to be Focused on?
+
+Some of the popular metrics are:
+Measuring the burndown of
+deliverables, which is usually
+represented using burndown charts
+Velocity
+Lead Time
+Cycle Time
+Code Quality
+Code Covered in Unit Test
+Deployment Success Rate
+Net Promoter Score
+
+------------------------------------------------------------------
+What Is Kanban?
+
+Kanban system is visual system that
+enables better management of work
+as it moves through the processes
+It visualizes & provides visibility into
+the process, workflows and the work
+passing through the process.
+
+
+-----------------------------------------------------------------------
+
+popular tools in Agile ?
+
+GitHub , Jira , Trello , ZI
+
+-----------------------------------------------------------------
+Difference between agile and scrum 
+
+What Is It?
+Agile
+Agile is a set of principles that's
+iterative and incremental in
+nature
+
+Scrum
+Scrum is an implementation of
+the agile methodology
+
+Agile
+The Agile manifesto and 12
+principles help an organization
+become agile
+Guidelines
+
+Scrum
+Used in projects where the
+requirements are constantly
+changing. It also adheres to agile
+principles
+
+------------------------
