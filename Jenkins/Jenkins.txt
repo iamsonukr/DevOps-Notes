@@ -73,7 +73,15 @@ python test.py
 
 --------------GITHUB AUTO BUILD-----------------
 
+1> Create New task
+2> Source Code Management > Git > Repository URL 
+    // This will clone the repo to the jenkins local server if jenkins is in local
+    // view this in console output '' Building in workspace C:\ProgramData\Jenkins\.jenkins\workspace\GitDemo
 
+3> Write the command to execute the file 
+
+4> Build Triggers > Poll SCM 
+// this will check the server for any changes every minute and run the code if changes found
 
 
 
