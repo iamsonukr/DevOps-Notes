@@ -20,7 +20,7 @@ We can write code at each stage and can create new stage in between Build and De
 After the code get commited to GitHub , Devops team write/create the pipeline that what to do with the code at different stages
 As soon the code get commited the , code automatically gets Build and Deployed based on the scripts written in the Jenkins
 
-
+-----------------------------------------------------
 Types of Environments
 
 1> Dev Environment - The projects are developed in this environemnt only. Unit testing and Integration Testing are performed \
@@ -35,11 +35,30 @@ CI-> Continuous Integration - Build test Deploy
 Continuous Integration is the automation to build and test application whenever new commits are pushed into the branch
 
 CD-> Continuous Devlivery/Deplyoment - Release Build Deploy
-Continuous Devlivery - is Continuous Integration + Deploy application to production by 
-"clicking on a button " Release to customers is often but on DEMAND.
 
-Continuous Deplyoment - is Continuous Delivery but without human interaction
+    Continuous Devlivery - is Continuous Integration + Deploy application to production by 
+    "clicking on a button " Release to customers is often but on DEMAND.
 
+    Continuous Deplyoment - is Continuous Delivery but without human interaction    
 
+Continuous Integration - is an automation to build and test application
+whenever new commits are pushed into the branch.
+
+Continuous Delivery - is Continuous Integration + Deploy application
+to production by "click, " (Release to customers is often,but on demand).
+
+Continuous Deployment - is Continuous Delivery but without human
+intervention (Release to customers is on-going).
+------------------------------------------JENKINS BY DURGESH-------------------------------------------------------------
+
+Creating a task
+
+1> Dashboard > All > New item
+OPTIONS 
+   This project is Parameterised 
+    > Parameterised
+   Build Triggers
+    > Scheduling (* * * * ) /* https://crontab.cronhub.io/ */
+    >
 
 

@@ -1,0 +1,240 @@
+https://www.cncf.io/
+
+----------------------------------------------------------------------------------
+Microservices Architecture
+
+A variant of the service-oriented architecture (SOA) structural style
+- arranges an application as a collection of loosely coupled services.
+
+In a microservices architecture, services are fine-grained and the
+protocols are lightweight.
+------------------------------------------------------------------------------------
+
+Monolithic Architecture
+• Built as a single unit
+• Deployed as a single unit
+• Duplicated on each server
+• Ex: 3-tier apps
+
+--------------------------------------------------------------------------------
+
+Microservices
+• Segregates functionality into smaller separate services each with
+a single responsibility
+• Scales out by deploying each service independently
+• Loosely coupled
+• Enable autonomous development by different teams, languages
+and platforms
+• Can be written by smaller teams
+
+----------------------------------------------------------------------------------------
+
+Microservices Anti Pattern
+-> The more the merrier
+-> Risk of unnecessary complexity
+-> Risk that changes impact numerous services
+-> Risk of complexity services
+
+---------------------------------------------------------------------
+
+Microservices - Benefits
+• Improved fault isolation
+• Eliminate vendor or technology lock-in
+• Ease of understanding
+• Smaller and faster deployments
+• Scalability
+
+-------------------------------------------------------------------
+
+Microservices - Drawbacks
+• Complexity is added to resolve complexity issues
+• Is your team trained, ready and has made POCs?
+• Don't start with a complex infrastructure
+• Testing may appear simpler but is it?
+• Deployment may appear simpler but is it?
+• Hard to do with multiple teams
+• One microservice update can impact many microservices
+• Multiple databases?
+• Latency issues
+• Transient errors
+• Multiple point of failures
+- How about security ?
+
+--------------------------------------------------------------------------------------
+
+Welcome to Cloud Native!
+• Within a short time, cloud native has become a driving trend in
+the software industry
+• It's a new way to think about building complex systems
+• Takes full advantage of modern software development practices,
+technologies, and cloud infrastructure
+• Widely popular in the open source communities
+
+
+Cloud native technologies
+empower organizations to build
+and run scalable applications in
+modern, dynamic environments
+such as public, private, and hybrid
+clouds. Containers, service
+meshes, microservices, immutable
+infrastructure and declarative
+APIs exemplify this approach.
+
+These techniques enable loosely
+coupled systems that are resilient,
+manageable and observable.
+Combined with robust automation,
+they allow engineers to make high-
+impact changes frequently and
+predictably with minimal toil.
+
+The Cloud Native Computing
+Foundation seeks to drive adoption of
+this paradigm by fostering and
+sustaining an ecosystem of open
+source, vendor neutral projects. We
+democratize state-of-the-art patterns
+to make these innovations accessible
+for everyone.
+
+--------------------------------------------------------
+
+Speed and Agility
+• Among many things, cloud native is about speed and agility
+• Users want...
+• Instantaneous responsiveness
+• Up-to-the-minute features
+• No downtime
+
+The business wants...
+• Accelerated innovation
+• Rapid releases of features to meet disruption from competitors
+• Increased confidence - stability/performance
+
+Mentality: Pets vs Cattle
+• Infrastructure becomes immutable and disposable
+• Provisioned in minutes and destroyed on demand
+• Never updated or repaired but re-provisioned
+
+
+---------------------------------------------------------------
+
+Cloud Native
+Trail Map
+• Breaks the journey into measurable objectives
+• Achieve step 1 by December
+- Set up key performance indicator
+    measurable values
+
+1. CONTAINERIZATION
+
+• Commonly done with Docker containers
+• Any size application and dependencies (even PDP-11 code running on an emulator) can be containerized
+• Over time, you should aspire towards splitting suitable
+applications and writing future functionality as microservices
+
+2. CI/CD
+
+• Setup Continuous Integration/Continuous Delivery (CI/CD) so
+that changes to your source code automatically result in a new
+container being built, tested, and deployed to staging and
+eventually, perhaps, to production
+• Setup automated rollouts, roll backs and testing
+• Argo is a set of Kubernetes-native tools for
+deploying and running jobs, applications,
+workflows, and events using GitOps
+paradigms such as continuous and
+progressive delivery and MLops
+
+3. ORCHESTRATION &
+APPLICATION DEFINITION
+• Kubernetes is the market-leading orchestration solution
+• You should select a Certified Kubernetes Distribution,
+Hosted Platform, or Installer: cncf.io/ck
+• Helm Charts help you define, install, and upgrade
+even the most complex Kubernetes application
+
+4. OBSERVABILITY & ANALYSIS
+• Pick solutions for monitoring, logging and tracing
+• Consider CNCF projects Prometheus for monitoring,
+Fluentd for logging and Jaeger for Tracing
+• For tracing, look for an Open Tracing-compatible
+implementation like Jaeger
+
+5. SERVICE PROXY, DISCOVERY, & MESH
+• CoreDNS is a fast and flexible tool that
+is useful for service discovery
+• Envoy and Linkerd each enable service
+mesh architectures
+• They offer health checking, routing,
+and load balancing
+
+-------------------------------------------------------
+
+What is container ?
+A container is a unit of Deployment. It contains everything needed a code to run .
+
+Why containers?
+• Move faster by deploying smaller units
+• Use fewer resources
+• Fit more into the same host
+Faster automation
+Portability
+• Isolation
+
+Virtual Machine -> Virtualize the hardware
+Container -> Virtualize the Operating System
+
+VM vs Containers
+Virtual Machine
+• Large footprint
+• Slow to boot
+• Ideal for long running tasks
+
+Container
+• Lightweight
+• Quick to start (it does not have to boot)
+• Portable
+->Ideal for short lived tasks
+-------------------------------------------------------------------
+
+Container registry
+• Centralized container
+repository
+• Think GitHub for containers
+Docker Hub
+• https://hub.docker.com/
+Cloud Providers
+• AWS, Azure, Google Cloud
+
+-------------------------------------------------
+
+Orchestrator
+• Manage
+• Infrastructure
+• Containers
+• Deployment
+• Scaling
+• Failover
+• Health monitoring
+• App upgrades, Zero-Downtime deployments
+• Install your own
+• Kubernetes, Swarm, Service Fabric
+Orchestrators as a service
+• Azure Kubernetes Service, Service Fabric
+
+-------------------------------------------------
+
+What is Docker ?
+
+• An open source container runtime
+• Mac, Windows & Linux support
+Command line tool
+"Dockerfile" file format for building container
+images
+• Windows let your run Windows and Linux
+containers
+-> Docker make it easy to create duplicate of environemt
+
+We make contai

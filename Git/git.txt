@@ -1,5 +1,9 @@
 Git is a free and opens source distributed version control system 
 
+Sources :
+https://www.atlassian.com/git/tutorials/
+
+
 ------------------------------------------------GLOBAL Config----------------------------
 
 
@@ -39,6 +43,9 @@ git log
 
 7> Check which memeber has made which changes in a file
 git blame filename
+
+8> Show all the routes that the branches has follow
+git log --oneline --graph 
 
 Files get modified -> Get to the staging area -> files get pushed
 
@@ -99,6 +106,8 @@ git branch
 git checkout branchName
 
 3b> Create and Switch branch in one line
+git checkout -b ＜new-branch＞
+
 
 4>In order to push the new branch in the github reposetory you need 
 git push --set-upstream  origin <branchName>
@@ -107,6 +116,8 @@ git push --set-upstream  origin <branchName>
 git merge origin/<branchName>
 
 6> If the repo has been merged on the server not on the local we use git pull to get all the channges made in latest repo
+git pull
+
 
 
 

@@ -1,0 +1,128 @@
+-> Docker make it easy to create duplicate of environemt
+
+-> We make container using docker and do all the configuratation inside that container for example the OS , the MongoDB version etc.
+-> After creating the container we share the container with out team members
+-> Docker deamon is the tool responsible for all the docker task like spinning up the containers, pull images , create images
+-> Docker desktop is the GUI to show all the containers and Images currently active
+
+-> To run the docker images we need docker container
+-> Containers run the images and they are isolated from each other
+-> We can run the same image in different containers
+
+-------------------------------DOCKER COMMANDS------------------------------
+
+1> Start the docker deamon
+sudo dockerd
+
+2> Run hello world in docker
+docker run hello-world
+
+3> Docker run a continer in interactive mode which has ubantu in it
+docker run -it ubuntu
+By name
+docker run -it --name my-conatiner busybox
+
+
+4>List all running docker containers
+docker container ls
+docker ps
+
+5>List all containers in docker
+docker container ls -a
+or
+docker ps -a
+
+6> Start a container
+docker start containerName
+
+7> Stop a container
+docker stop containerName
+
+
+8> Get the folder Structure of  a container without running the container
+docker exec containerName ls
+
+9> Get inside a continer with the terminal in it.
+docker exec -it containerName bash
+
+10> Open the file
+cat main.js
+
+10> Logout
+Ctrl + D
+
+------------PORT MAPPING-----------
+
+11> Export container port to local Port
+docker run -it -p 1025:1025 mailhog/mailhog
+docker run -it -p <your port> | <default port> <ImageName>
+
+12> Exposing multiple ports
+docker run -it -p <your port 1> | <default port 1> -p <your port 2> | <default port 2> <ImageName>
+
+13> Passing environemt variable
+docker run -it -p 1025:1025 -e key=value -e key=value mailhog/mailhog
+
+
+-------14> Creating Docker project ------------
+
+AFTER COMPLETGIN THE PROJECT
+
+1> Step One
+Create a file named Dockerfile
+
+2> Step two
+    i> Install the base image | operating system
+    ii> Install the resources | application like nodeJS
+    iii> Copy the files
+    iv> Install the dependencies
+    v> Define the entry point
+
+    /NodeProject/Dockerfile
+
+docker build -t ImageName Directiry  
+
+
+
+15> Caching the layer--------------
+
+Caching the layer is about saving the data that has been already extracted, So that it could be reused again in the next execution
+- Layers are the sequence of code written in the Dockerfile
+- These layers are saved once they are executed and do not executed if run again unless there is change in the code
+
+
+16> Docker Compose-------------
+
+While running multiple services we need to set up docker componse file.
+Docker Compose is a tool that allows you to define and manage multiple containers as a single application. It is particularly useful
+when you have an application with multiple services (like a web server, database, and a cache system) that need to work together
+To setup docer compose 
+
+1> Step one
+Create docker-compose.yml
+
+2> Step two
+Write all the configuration syntax wise
+
+3> Step three 
+sudo docker compose
+
+-> Stop the containers
+CTRL+C 
+
+-> docker compose down 
+remote all the containers
+
+
+
+17> Docker Networking --------------------
+
+-------------------------------------Ubuntu Commands--------------------------
+
+->List the subdirectories
+ls
+
+->Make Folder
+mkdir new Folder
+
+
