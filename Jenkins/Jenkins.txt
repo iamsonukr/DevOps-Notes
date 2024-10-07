@@ -83,7 +83,122 @@ python test.py
 4> Build Triggers > Poll SCM 
 // this will check the server for any changes every minute and run the code if changes found
 
+-------------------EMAIL NOTIFICATIONS------------------------
+
+1> Dashboard > Manage Jenkins > Email Notification > Advance > use SMTP authentication >
+2> Write email (Sender email) and password , 
+3> For password > Google account > search app password > Create Poject > Name your project > It will create a password > Paste the password in the jenkins
+4> Inside Project Configuration > Post-Build Action > Email Notification > Recipt emails
+
+-------------- Jenkins Remote Server/ Updating website in Vercel ------------------------------
+
+1> Create new > Git > Paste Repo >
+2> Build Triggers Poll SCM > Set timing (* * * * *) for five minutes
+3> Write the pipeline in Grovey
+
+----------------------------------Manage Jenkins Users ---------------------
+
+1> Dashboard > Mange Jenkins > users > Create new user
+
+2> Install role based strategy plugin > 
+
+3> Dashboard > Manage jenkins > Manage and assign Roles > Manage Roles > Create New Role with permission
+
+4> Now > Mange Roles > Assign Role > Add User > Add the user Created in Step 1 with the role
+
+-------------------------------- Maven ---------------------------------
+Maven is a build automation tool used for java projects
+
+1> Copy maven project git URL
+2> Create new Job > Paste the link there
+3> Install the maven Integration plugin 
+4> Mange Jenkins > Tools > Maven Installation > Add Maven > Assing name and version
+5> DashBoard > Maven Project > Configuration > Build Steps > Invoke Top level Maven Project targets > Assign version 
+
+
+---------------------------Local Deployment of APP------------------------
+
+MAVEN all
+Build Steps > Execute Shell > java -jar C:\ProgramData\Jenkins\.jenkins\workspace\maven-demo\target\my-app-1.0-SNAPSHOT.jar
+
+---------------------------TESTS RESULT GRAPH------------------------------
+
+
+1>  DASHBOARD > PROJECT NAME > WORKSPACE > TARGET > SUREFIRE REPORTS >.XML ///THIS FILE CONTAINS ALL THE DATA OF PROGRAM
+1> DAHSBOARD > PROJECT NAME > CONFIGURATION > ADD POST BUILD ACTIONS > Publish JUnit test result report >
+2> PASTE THE ADDRESS OF .XML IN SUREFILES > target/surefire-reports/*.xml
+
+
+---------------------------------- Archive Artifact ---------------------------------
+
+//Download the .jar / .exe after the build is Successful
+
+1> DAHSBOARD > PROJECT NAME > CONFIGURATION > Post Build Action > Archive the artifacts >
+2> Files to Archive > target/*.jar
+    Advance > Archive Artifects only if build is successful >
+
+To download > 
+Project name > Last Successful Artifect >
+
+------------------------------------JENKINS PIPELINE------------------------------------
+
+1> New Item > Pipeline > Configure > Pipeline > Write Pipeline
+
+-> You can get sample pipeline from try pipeline file in the upper right of the pipeline box
+-> Pipeline -> environemnt | tools | agnet | Stages-> Stage -> Steps -> 
+-> Pipeline starts with the word pipeline{ after this we mention agent which is the server then we mention tools {0} Stages{ stage(){steps{ }}}}
+-> For writing shell command starts with sh 'command' 
+-> For writing shell command with multiple lines write sh ''' command '''
+-> To retry write retry(3) {command}
+    // This will try executing the the step command three times 
+-> Timeout function is defined under timeout, it means that the code is ment to be executed in the provided timeframe or else it will not be executed
+timeout(time:15, unit:'SECONDS'){
+                    sh 'sleep 30'
+                    }
+
+-> To add credentials which are required in the pipeline ,go to > Dashboard > Manage Jenkins > Credentials > System > Global credentials (unrestricted)
+-> For storing password > New Credential > Type Password in Secret > Type ID (This will be used as a variable in the Pipeline)
+ environemnt{
+        PASS=credentials (SECRET_KEY) // secret_key is the environemt variable set in the global
+    }
+
+pipeline {
+    agent any
+
+    tools{
+
+    }
+
+    environemnt{
+        key="value"
+        NAME="Sonu"
+        PASS=credentials (SECRET_KEY) // secret_key is the environemt variable set in the global
+    }
+
+    stages {
+        stage('Hello') {
+            steps {
+                echo 'Hello World'
+                // One line command
+                sh ''
+                // multiline commnad
+                sh ''' 
+                echo $NAME
+                 '''
+                // Function to retry
+                retry(3) {
+                    sh 'echo Trying'
+                }
+                // function to timeout
+                timeout(time:15, unit:'SECONDS'){
+                    sh 'sleep 30'
+                }
+            }
+            ste
+        }
+    }
+}
 
 
 
-
+     
