@@ -194,11 +194,13 @@ pipeline {
                     sh 'sleep 30'
                 }
             }
-            ste
+            
         }
     }
 }
 
+----------------MAVEN with pipeline -----------------------------
 
+ 
 
      
