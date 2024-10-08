@@ -118,7 +118,7 @@ git merge origin/<branchName>
 6> If the repo has been merged on the server not on the local we use git pull to get all the channges made in latest repo
 git pull
 
-
-
+7> For git rebase . Rebase add the entire commit on one branch to another branch
+git rebase <barchname>
 
 

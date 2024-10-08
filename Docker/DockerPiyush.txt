@@ -11,6 +11,10 @@
 
 -------------------------------DOCKER COMMANDS------------------------------
 
+Your docker is installed in Ubantu operating system > Go inside Ubantu first before starting DOCKER
+type wsl in terminal
+
+
 1> Start the docker deamon
 sudo dockerd
 
@@ -113,10 +117,6 @@ CTRL+C
 -> docker compose down 
 remote all the containers
 
-
-
-17> Docker Networking --------------------
-
 -------------------------------------Ubuntu Commands--------------------------
 
 ->List the subdirectories
@@ -124,5 +124,49 @@ ls
 
 ->Make Folder
 mkdir new Folder
+
+
+_______________________________________________________PART TWO____________________________________________________
+-----------------------------------------------------DOCKER NETWORK------------------------------------------------
+
+-> By default Docker connect your container with internet using bridge
+-> Bridge helps to communicate the differnt containers within the same host 
+
+
+1> Check you container connectivity
+docker network inspect bridge
+
+2> Check all network active on the system
+docker network ls
+
+
+3> Container will not have access to the internet
+docker run -it --network=none busybox
+
+
+4>Container will access host Network to the internet
+docker run -it --networ=host busybox
+
+5> Create your own Network
+docker network create -d bridge myNetwork
+
+----
+6> Make a container named tony stark connected to a custom network with ubantu installed in it
+docker run -it --network=myNetwork --name=tonyStark ubuntu
+
+7> Create another container drStrange with same network and busybox in it 
+docker run -it --network=myNetwork --name=drStrange busybox
+
+/// BOTH of these containers can communicate with each other because both of them are running in the same network
+-----
+
+-----------------------------------Volume Mounting--------------------------
+
+-> When we create a delete a container it deletes all the memory stored in the container . To prevent this from happening we have docker volume.
+-> In docker volume we give the container access to a folder in our host machine where it can store and manage data which stays in the system even if the continer gets removed.
+-> Giving the contianer access to the folder in host machine is called mounting the folder to a contianer
+
+1> Docker command for creating a ubuntu container with folder access of dockerdock to home/abc of ubuntu 
+docker run -it -v "/mnt/c/Users/M.R Enterprises/Desktop/dockerdock:/home/abc" ubuntu
 
 
