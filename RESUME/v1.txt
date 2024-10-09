@@ -1,0 +1,256 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+\usepackage{helvet}  % Add this line
+\renewcommand{\familydefault}{\sfdefault}  % Set the font family to Helvetica
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    {\Huge \scshape Sonu Kumar} \\ \vspace{1pt}
+    Chandigarh \\ \vspace{1pt}
+    \small \raisebox{-0.1\height}\faPhone\ +91-8210490833 ~ \href{mailto:thesonukumar357@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{thesonukumar357@gmail.com}} ~ 
+    \href{https://linkedin.com/in/thesonukr/}{\raisebox{-0.2\height}\faLinkedin\ \underline{linkedin.com/in/thesonukr}}  ~
+    \href{https://github.com/iamsonukr}{\raisebox{-0.2\height}\faGithub\ \underline{github.com/iamsonukr}}~
+    \vspace{2pt}
+    
+    \href{https://thesonukr.vercel.app/}
+    {\raisebox{-0.2\height}\faUser\  
+    \underline{https://thesonukr.vercel.app}} ~ 
+    
+    \vspace{-8pt}
+\end{center}
+
+
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: C, C++, Python, Java, JavaScript ES6} \\
+     \textbf{Frontend}{: HTML, CSS, JavaScript, TypeScript, TailwindCSS, ReactJs, NextJs, SASS, AdobeXd, Figma, } \\
+      \textbf{Backend}{: NodeJs, MongoDB, SQL, NoSQL,  REST APIs, Express.js, } \\
+     \textbf{Tools/Technologies}{: Git, GitHub, Jenkins CI/CD, Docker, Postman, Agile, Jira, Webpack} \\
+    }}
+ \end{itemize}
+ \vspace{-20pt}
+
+
+
+
+%-----------EXPERIENCE-----------
+\section{Experience (1 Year 2 Months)}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Kreativan Technologies}{Jan 2024 -- Present}
+      {Full Stack Developer}{IT Park, Chandigarh}
+      \resumeItemListStart
+        \resumeItem{Developed dynamic web applications to display data from databases, improving data retrieval speed by 30\% and increasing user engagement by 20\% through optimized query performance and responsive design.}
+        \resumeItem{Executed comprehensive optimizations for backend performance, resulting in a 40\% reduction in page load time and a 25\% boost in overall application efficiency. Utilized docker for containerization and Git for version control.}
+        \resumeItem{Managed API integration and resolved major issues, ensuring seamless connectivity and robust performance.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Savapak Digital Solutions}{Nov 2023 -- Jan 2024}
+      {Front End Developer Intern}{bhubaneswar, Orissa}
+      \resumeItemListStart
+        \resumeItem{Leveraged ReactJS, Tailwind CSS, and Node.js to craft dynamic, responsive web interfaces. Partnered with UX/UI designers to create intuitive user experiences and integrated robust RESTful APIs with MongoDB.}
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {Baskethunt Private Limited}{Aug 2022 -- Oct 2022}
+      {IT \& Web Developer Intern}{Sahibganj, Jharkhand}
+      \resumeItemListStart
+        \resumeItem{Developed and maintained ReactJS web applications, troubleshooting complex issues and implementing responsive designs for seamless cross-device experiences. Utilised git for version control}
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {Institute for Sustainable Development and Governance}{Jun 2022 -- Jul 2022}
+      {Web Developer Intern}{Thiruvananthapuram, Kerala}
+      \resumeItemListStart
+        \resumeItem{Developed the organization's official website with an interactive interface in collaboration with UX/UI designers.}
+    \resumeItemListEnd
+
+
+    
+  \resumeSubHeadingListEnd
+\vspace{-16pt}
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Food Ordering Website} $|$ \emph{ReactJs, NodeJs, MongoDB, JWT, Multer, JSX, ES6,}}{Feb 2024}
+          \resumeItemListStart
+            \resumeItem{Developed a full-stack food ordering app with Razorpay integration, utilizing MongoDB, Node.js, JWT, ContextAPI, and Multer for secure, efficient operations.}
+            \resumeItem{Built an admin panel for real-time management of food items, where the admin can add, remove, and manage the orders enhancing platform control and usability.}
+          \resumeItemListEnd
+          \vspace{-16pt}
+      
+         
+        \resumeProjectHeading
+          {\textbf{Chat Application} $|$ \emph{MERN, Socket.io, Webpack, JWT, JSON, bcrypt }}{April 2024}
+          \resumeItemListStart
+            \resumeItem{Developed chat application that allows users to have live conversations. Automated the deployment using Jenkins.}
+            \resumeItem{Used GitHub for version control. Cypress for testing }
+          \resumeItemListEnd 
+           \vspace{-16pt}
+          \resumeProjectHeading
+          {\textbf{Social Media Platform} $|$ \emph{NextJS, NodeJS, NextAuth, MongoDB}}{Nov 2023}
+          \resumeItemListStart
+            \resumeItem{Built a social media platform for reading, writing, and posting feeds, using NextAuth for secure login.}
+            \resumeItem{Managed data with MongoDB and powered the backend with Node.js for seamless performance.}
+          \resumeItemListEnd 
+    \resumeSubHeadingListEnd
+\vspace{-15pt}
+
+%
+%-----------INVOLVEMENT---------------
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Shivalik College of Engineering}{Sep. 2020 -- May 2024}
+      {Bachelor of Technology in Computer Science \& Engineering}{Dehradun, Uttarakhand}
+  \resumeSubHeadingListEnd
+
+%------RELEVANT COURSEWORK-------
+\section{Achievements}
+    %\resumeSubHeadingListStart
+        
+          \begin{itemize}[itemsep=-5pt, parsep=3pt]
+    \resumeItem{Successfully completed over 25 development projects, showcasing hands-on expertise in various technologies.}
+\end{itemize}
+\vspace{-20pt}
+\begin{itemize}[itemsep=-10pt, parsep=3pt]
+    \resumeItem{Delivered 50+ projects as a freelancer, including web development, UI/UX design, graphic design, WordPress, and Shopify, demonstrating a versatile skill set.}
+\end{itemize}
+
+    
+        \vspace*{2.0\multicolsep}
+    %\resumeSubHeadingListEnd
+
+
+
+
+\end{document}

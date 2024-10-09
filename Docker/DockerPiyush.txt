@@ -9,7 +9,7 @@
 -> Containers run the images and they are isolated from each other
 -> We can run the same image in different containers
 
--------------------------------DOCKER COMMANDS------------------------------
+--------------------------------------------DOCKER COMMANDS-------------------------------------------
 
 Your docker is installed in Ubantu operating system > Go inside Ubantu first before starting DOCKER
 type wsl in terminal
@@ -55,7 +55,7 @@ cat main.js
 10> Logout
 Ctrl + D
 
-------------PORT MAPPING-----------
+------------------------------------------------PORT MAPPING----------------------------------------------------
 
 11> Export container port to local Port
 docker run -it -p 1025:1025 mailhog/mailhog
@@ -68,7 +68,7 @@ docker run -it -p <your port 1> | <default port 1> -p <your port 2> | <default p
 docker run -it -p 1025:1025 -e key=value -e key=value mailhog/mailhog
 
 
--------14> Creating Docker project ------------
+-------------------------------------14> Creating Docker project ---------------------------------------
 
 AFTER COMPLETGIN THE PROJECT
 
@@ -82,19 +82,36 @@ Create a file named Dockerfile
     iv> Install the dependencies
     v> Define the entry point
 
-    /NodeProject/Dockerfile
+Example file: /NodeProject/Dockerfile
 
-docker build -t ImageName Directiry  
+1> Login the docker
+docker login
 
+2> Build the image
+docker build -t ImageName Directiry 
+docker build -t sonudocker .
 
+3> Tag the image 
+docker tag sonudocker thesonukr/maiden:latest
 
-15> Caching the layer--------------
+5> Push the image to the dockerhub
+docker push dockerhubusername/imagename:tag
+docker push thesonukr/maiden:latest2
+
+6> Run this docker in you local repo
+docker run sonudocker
+
+)> Pull the latest image from the docker
+docker pull thesonukr/maiden:latest2
+
+)> 
+-------------------------------------------------15> Caching the layer----------------------------------------
 
 Caching the layer is about saving the data that has been already extracted, So that it could be reused again in the next execution
 - Layers are the sequence of code written in the Dockerfile
 - These layers are saved once they are executed and do not executed if run again unless there is change in the code
 
-
+---------------------------------------------------Docker Compose---------------------------------------------
 16> Docker Compose-------------
 
 While running multiple services we need to set up docker componse file.
@@ -117,7 +134,7 @@ CTRL+C
 -> docker compose down 
 remote all the containers
 
--------------------------------------Ubuntu Commands--------------------------
+----------------------------------------------------Ubuntu Commands------------------------------------------------
 
 ->List the subdirectories
 ls
@@ -168,5 +185,23 @@ docker run -it --network=myNetwork --name=drStrange busybox
 
 1> Docker command for creating a ubuntu container with folder access of dockerdock to home/abc of ubuntu 
 docker run -it -v "/mnt/c/Users/M.R Enterprises/Desktop/dockerdock:/home/abc" ubuntu
+
+2> You can also create your own volume to mount in the container
+docker volume create myvolume
+
+3> To list all volumes created
+docker volume ls
+
+4> To inspect volume 
+docker volume inspect myvolume
+
+5> Use to volume to run the container
+docker run -it -v myvolume:/home/abc ubuntu
+
+
+-------------------------------------------DOCKER MULTI STAGE BUILD---------------------------------
+
+Multi Stage Build mens dividing the build process in multiple stages 
+
 
 

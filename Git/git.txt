@@ -118,7 +118,40 @@ git merge origin/<branchName>
 6> If the repo has been merged on the server not on the local we use git pull to get all the channges made in latest repo
 git pull
 
-7> For git rebase . Rebase add the entire commit on one branch to another branch
-git rebase <barchname>
+
+7> Github branches has naming conventions like
+ git branch 'feat/addChat'
+ git branch 'bckend/user'
+
+
+------------------------Rebase---------------
+
+// git merge looses the history of commits in child branch . If there is 5 commits it squash the all 
+five commits and push it in main branch.
+
+// In order to overcome this issue we use Rebase
+// Rebase takes the entire commit history of child brancnh and combine it with the head of parent branch . So that 
+history could be maintain.
+// One of the drawback of rebase is it makes the commit history too long and pollutes it.
+
+That is why rebase is usually used in special cases. But mostly merge is used.
+
+1> name the branch you want to rebase in current branch
+git rebase branchName
+
+
+---------------------- Git stash ---------------------
+
+If we have code that is not on server and wnat to pull it then it will show error.
+It is used to pull the repo from server by tempropy storing our changes in the stach .
+
+1> Store the local changes in temp
+git stash
+
+2> Pull the latest changes from the server
+git pull 
+
+3> Apply the changes back
+git stach apply
 
 

@@ -1,0 +1,69 @@
+Kubernetes (K8s) is open source system for 
+Automating deployment, 
+Management of containerized apps and scaling
+Container orchestration
+
+usecase of using K8s -> 
+
+When you deploy Kubernatese, you get a cluseter.
+Two important parts are :
+-> Master (Control Plane)
+-> Worker Node
+
+There and multiple docker container deployed on multiple servers and each server is connected to the Kubernatives through a container 
+-> Each server is called worker node
+-> Each woker node has a kubernative agent called kubelet 
+=> MASTER -> API  Server, Schedular , ETCD , Control Manager
+=> Worker Node -> Kubelet , kube-proxy , contianer-runtime
+
+Different Components of K8s
+1> API Server -> It provides interface 
+2> Container runtime -> Assign node to newly created Pods
+3> ETCD -> Key value store , having all cluster data
+4> Kube Proxy -> responsible for managing the state of cluster
+5> Schedular
+6> Kubelet 
+7> kube controller
+
+Q> What is PODs in K8s
+A> A single instance of a running process in a cluster. It can run one or more containers and share the same resource.
+
+
+---------------------INSTALL Kubernatives--------------------
+
+1> Visit this Link 
+https://kubernetes.io/docs/tasks/tools/install-kubectl-windows/#install-nonstandard-package-tools
+
+2> Visit this Link
+https://chocolatey.org/install
+
+3> Copy this link from page 2
+Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
+
+4> Open powershell as admin 
+paste the link and run
+
+5> visit this page
+https://kubernetes.io/docs/tasks/tools/install-kubectl-windows/#install-nonstandard-package-tools
+
+6> Copy paste this code in terminal 
+choco install kubernetes-cli
+
+7> Copy paste this code in terminal 
+kubectl version --client
+
+8> Follow till last step in link setp 1 to 6
+https://kubernetes.io/docs/tasks/tools/install-kubectl-windows/#install-nonstandard-package-tools
+
+-------Now Install MINIKUBE----------
+
+9> Go to this link
+https://minikube.sigs.k8s.io/docs/start/?arch=%2Fwindows%2Fx86-64%2Fstable%2Fchocolatey
+
+10> Select installer type chocolatey
+
+
+
+
+
+
